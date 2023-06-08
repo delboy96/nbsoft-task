@@ -3,15 +3,15 @@ require_once ('../components/header.php');
 ?>
 
 <div class="px-5 w-100 mh-100 ">
-    <div id="header" class="d-flex flex-row justify-content-between my-5">
-        <div class="col-3">
-            <h1>Danilo Milošević</h1>
-            <h5 class="opacity-50">Web developer</h5>
+    <div id="header" class="d-flex flex-column flex-lg-row justify-content-between my-5">
+        <div class="col-lg-3 text-center text-lg-start">
+            <h1 class="">Danilo Milošević</h1>
+            <h5 class="opacity-50 h4">Web developer</h5>
         </div>
-        <div class="col-2">
+        <div id="profile" class="col-10 col-lg-2 align-self-center">
             <img src="../assets/images/photo.jpg" alt="profile image" class="w-100 rounded-circle">
         </div>
-        <div id="info" class="col-3 d-flex flex-column text-end justify-content-between fw-semibold">
+        <div id="info" class="col-lg-3 d-flex flex-column text-center text-lg-end justify-content-between fw-semibold h5">
             <span class="">danilo.milosevic@protonmail.com</span>
             <span class="">+381652025514</span>
             <span class="">Belgrade, Serbia</span>
@@ -21,7 +21,7 @@ require_once ('../components/header.php');
     </div>
     <div id="content" class="">
         <div class="row">
-            <div class="col-6 d-flex flex-column pe-5">
+            <div class="col-10 col-lg-6 d-flex flex-column pe-5">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit">Education</h2>
                 <span class="fw-bold h3 mt-4">Internet Technology</span>
                 <span class="h2 fw-medium">ICT College of Vocational Studies</span>
@@ -30,27 +30,27 @@ require_once ('../components/header.php');
                     <span>Belgrade, Serbia</span>
                 </div>
             </div>
-            <div class="col-6 d-flex flex-column ps-5 pe-5">
+            <div class="col-10 col-lg-6 d-flex flex-column ps-5 pe-5">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit mb-4">Skills</h2>
-                <div class="d-flex flex-row my-2">
+                <div class="d-flex flex-row my-2 h5">
                     <span class="tech">HTML 5</span>
                     <span class="tech">CSS 3</span>
                     <span class="tech">JavaScript</span>
                     <span class="tech">PHP</span>
                     <span class="tech">Laravel</span>
                 </div>
-                <div class="d-flex flex-row my-2">
+                <div class="d-flex flex-row my-2 h5">
                     <span class="tech">MySQL</span>  
                     <span class="tech">UI Frameworks ( Bulma, Bootstrap)</span>
                 </div>
-                <div class="d-flex flex-row my-2 mb-4">
+                <div class="d-flex flex-row my-2 mb-4 h5">
                     <span class="tech">TailwindCSS</span>  
                     <span class="tech">Elementor</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-6 d-flex pe-5 flex-column">
+            <div class="col-10 col-lg-6 d-flex pe-5 flex-column">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit">WORK EXPERIENCE</h2>
                 <div class="d-flex flex-column mb-5">
                     <span class="h3 fw-bold mb-0">Analyst</span>
@@ -71,7 +71,7 @@ require_once ('../components/header.php');
                     <span class="h5">- Building pages using Elementor</span>
                 </div>
             </div>
-            <div class="col-6 d-flex flex-column ps-5 pe-5">
+            <div class="col-10 col-lg-6 d-flex flex-column ps-5 pe-5">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit mb-4">PERSONAL PROJECTS</h2>
                 <div class="d-flex flex-column mb-4">
                     <span class="h4">Fit Arena Training Center Website</span>
@@ -80,8 +80,7 @@ require_once ('../components/header.php');
                 </div>
                 <div class="d-flex flex-column mb-4">
                     <span class="h4">Milica Misic Church-Artist Icon-Painter Website</span>
-                    <span class="h5">- My first non-school project and website. Laravel framework used
-for back-end development</span>
+                    <span class="h5">- My first non-school project and website. Laravel framework used for back-end development</span>
                     <span class="h5">- Link: <a href="https://milicamisic.com" class="text-black">https://milicamisic.com</a></span>
                 </div>
                 <div class="d-flex flex-column mb-4">
