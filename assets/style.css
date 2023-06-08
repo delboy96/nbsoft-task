@@ -1,0 +1,18 @@
+.w-fit {
+    width: fit-content !important;
+}
+
+.tech {
+    background-color: darkgrey;
+    border-radius: 8px;
+    padding: 6px 14px;
+    color: white;
+    margin-right: 1rem;
+}
+
+.interests {
+    border-radius: 8px;
+    padding: 6px 14px;
+    margin-right: 1rem;
+    border: 2px solid gray;
+}
