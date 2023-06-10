@@ -2,16 +2,16 @@
 require_once ('../components/header.php'); 
 ?>
 
-<div class="px-5 w-100 mh-100 ">
+<div class="px-4 px-md-5 w-100 mh-100 ">
     <div id="header" class="d-flex flex-column flex-lg-row justify-content-between my-5">
-        <div class="col-lg-3 text-center text-lg-start">
+        <div class="col-lg-4 text-center text-lg-start">
             <h1 class="">Danilo Milošević</h1>
             <h5 class="opacity-50 h4">Web developer</h5>
         </div>
-        <div id="profile" class="col-10 col-lg-2 align-self-center">
+        <div id="profile" class="col-10 col-md-8 col-lg-2 align-self-center">
             <img src="../assets/images/photo.jpg" alt="profile image" class="w-100 rounded-circle">
         </div>
-        <div id="info" class="col-lg-3 d-flex flex-column text-center text-lg-end justify-content-between fw-semibold h5">
+        <div id="info" class="col-lg-4 d-flex flex-column text-center text-lg-end justify-content-between fw-semibold h5">
             <span class="">danilo.milosevic@protonmail.com</span>
             <span class="">+381652025514</span>
             <span class="">Belgrade, Serbia</span>
@@ -21,7 +21,7 @@ require_once ('../components/header.php');
     </div>
     <div id="content" class="">
         <div class="row">
-            <div class="col-10 col-lg-6 d-flex flex-column pe-5">
+            <div class="col-12 col-lg-6 d-flex flex-column pe-0 pe-lg-5">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit">Education</h2>
                 <span class="fw-bold h3 mt-4">Internet Technology</span>
                 <span class="h2 fw-medium">ICT College of Vocational Studies</span>
@@ -30,27 +30,27 @@ require_once ('../components/header.php');
                     <span>Belgrade, Serbia</span>
                 </div>
             </div>
-            <div class="col-10 col-lg-6 d-flex flex-column ps-5 pe-5">
+            <div class="col-12 col-lg-6 d-flex flex-column ps-2.5 ps-lg-5 pe-0 pe-lg-5 mb-3 mb-md-5 mb-lg-3">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit mb-4">Skills</h2>
-                <div class="d-flex flex-row my-2 h5">
+                <div class="d-flex flex-row my-2 h5 justify-content-start justify-content-md-center justify-content-lg-start">
                     <span class="tech">HTML 5</span>
                     <span class="tech">CSS 3</span>
                     <span class="tech">JavaScript</span>
                     <span class="tech">PHP</span>
                     <span class="tech">Laravel</span>
                 </div>
-                <div class="d-flex flex-row my-2 h5">
+                <div class="d-flex flex-row my-2 h5 justify-content-start justify-content-md-center justify-content-lg-start">
                     <span class="tech">MySQL</span>  
                     <span class="tech">UI Frameworks ( Bulma, Bootstrap)</span>
                 </div>
-                <div class="d-flex flex-row my-2 mb-4 h5">
+                <div class="d-flex flex-row my-2 mb-4 h5 justify-content-start justify-content-md-center justify-content-lg-start">
                     <span class="tech">TailwindCSS</span>  
                     <span class="tech">Elementor</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-10 col-lg-6 d-flex pe-5 flex-column">
+            <div class="col-12 col-lg-6 d-flex pe-0 pe-lg-5 flex-column">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit">WORK EXPERIENCE</h2>
                 <div class="d-flex flex-column mb-5">
                     <span class="h3 fw-bold mb-0">Analyst</span>
@@ -71,7 +71,7 @@ require_once ('../components/header.php');
                     <span class="h5">- Building pages using Elementor</span>
                 </div>
             </div>
-            <div class="col-10 col-lg-6 d-flex flex-column ps-5 pe-5">
+            <div class="col-12 col-lg-6 d-flex flex-column ps-2.5 ps-lg-5 pe-0 pe-lg-5 mb-3 mb-md-5 mb-lg-3">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit mb-4">PERSONAL PROJECTS</h2>
                 <div class="d-flex flex-column mb-4">
                     <span class="h4">Fit Arena Training Center Website</span>
@@ -90,14 +90,14 @@ require_once ('../components/header.php');
                 </div>
             </div>
         </div>
-        <div class="row justify-content-end ">
-            <div class="col-6 d-flex ps-5 pe-5 d-flex flex-column">
+        <div class="row justify-content-md-end ">
+            <div class="col-12 col-lg-6 d-flex ps-2.5 ps-lg-5 pe-0 pe-lg-5 d-flex flex-column">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit ">CERTIFICATES</h2>
                 <span class="h4 my-5">B2 First (First Certificate in English) (10/2016)</span>
             </div>
         </div>
-        <div class="row justify-content-end">
-            <div class="col-6 d-flex ps-5 pe-5 d-flex flex-column">
+        <div class="row justify-content-md-end">
+            <div class="col-12 col-lg-6 d-flex ps-2.5 ps-lg-5 pe-0 pe-lg-5 d-flex flex-column">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit">LANGUAGES</h2>
                 <div class="d-flex flex-row justify-content-between my-5">
                     <div class="d-flex flex-column ">
@@ -111,10 +111,10 @@ require_once ('../components/header.php');
                 </div>
             </div>
         </div>
-        <div class="row justify-content-end">
-            <div class="col-6 d-flex ps-5 pe-5 flex-column">
+        <div class="row justify-content-md-end">
+            <div class="col-12 col-lg-6 d-flex ps-2.5 ps-lg-5 pe-0 pe-lg-5 flex-column">
                 <h2 class="text-uppercase border-top border-2 border-black border-bottom w-fit mb-5">INTERESTS</h2>
-                <div class="d-flex flex-row  flex-wrap">
+                <div class="d-flex flex-row justify-content-center justify-content-lg-start flex-wrap">
                     <span class="h5 interests mb-3">Sports</span>
                     <span class="h5 interests mb-3">Reading</span>
                     <span class="h5 interests mb-3">Movies</span>

@@ -23,15 +23,106 @@
 
 @media screen and (max-width:500px){
 
+    #header, #content {
+        margin-bottom: 3rem !important;
+    }
+
     #profile {
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
 
     #info {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
+
+    #info span{
+        margin-bottom: 1rem;
+    }
+
+    .tech {
+        padding: 6px 9px;
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:1023px){
+    #profile {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    h2.text-uppercase {
+        place-self: center;
+    }
+
     #info span{
         margin-bottom: 1rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .tech {
+        padding: 6px 6px;
+        font-size: 0.8rem;
+    }
+}    
+
+@media screen and (min-width:992px) and (max-width: 1342px) {
+    #info, .tech {
+        font-size: 1rem !important;
+    }
+} 
+
+@media screen and (min-width: 2000px) {
+    body {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+
+    body > div {
+        margin-top: 6rem !important;
+        margin-bottom: 10rem !important;
+
+    }
+    #content {
+        margin-top: 10rem !important;
+    }
+    #info, .tech {
+        font-size: 2rem !important;
+    }
+    .tech {
+        padding: 12px 24px;
+        margin-right: 1.5rem;
+    }
+    #header > div.col-lg-4.text-center.text-lg-start > h1 {
+        font-size: 4.5rem;
+    }
+    #header > div.col-lg-4.text-center.text-lg-start > h5 {
+        font-size: 3rem;
+    }
+    .opacity-50 {
+        font-size: 2rem !important;
+    }
+    h2.text-uppercase {
+        font-size: 3.5rem !important;
+    }
+    span.h2 {
+        font-size: 3rem !important;
+    }
+    span.h3 {
+        font-size: 2.5rem !important;
+    }
+    span.h4 {
+        font-size: 2.25rem !important;
+    }
+    span.h5 {
+        font-size: 2rem !important;
+    }
+    #content > div:nth-child(2) > div:nth-child(1) > div:nth-child(2), #content > div:nth-child(2) > div:nth-child(1) > div:nth-child(3), #content > div:nth-child(2) > div.col-12.col-lg-6.d-flex.flex-column.ps-2\.5.ps-lg-5.pe-0.pe-lg-5.mb-3.mb-md-5.mb-lg-3 > div:nth-child(2), #content > div:nth-child(2) > div.col-12.col-lg-6.d-flex.flex-column.ps-2\.5.ps-lg-5.pe-0.pe-lg-5.mb-3.mb-md-5.mb-lg-3 > div:nth-child(3), #content > div:nth-child(2) > div.col-12.col-lg-6.d-flex.flex-column.ps-2\.5.ps-lg-5.pe-0.pe-lg-5.mb-3.mb-md-5.mb-lg-3 > div:nth-child(4) {
+        margin-top: 3rem;
+    }
+} 
