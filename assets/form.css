@@ -1,0 +1,19 @@
+body {
+    min-height: 100vh !important;
+}
+form {
+    min-height: 75vh;
+}
+
+input, select, textarea {
+    padding: 4px 6px ;
+}
+
+label {
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: slategray;
+    color: whitesmoke;
+}
