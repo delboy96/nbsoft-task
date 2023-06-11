@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // setting today as default date
     document.getElementById('birthdate').valueAsDate = new Date();
 
-
     // form validation
     let form = document.querySelector('#createUser');
 
@@ -65,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const contentDiv = document.querySelector('body > div');
         let contentDisplay = '<h2 class="border-bottom w-100 border-2 border-gray text-center px-4 py-3">js form val</h2><div class="d-flex flex-column justify-content-around w-100 text-center"><h3 class="text-success fst-italic mb-3">Uspesno poslati podaci!</h3>'; 
         const errorDiv = document.querySelector("#errors");
-        let errorsDisplay = '<ul class="list-unstyled">'
+        let errorsDisplay = '<ul class="list-unstyled fw-medium">'
 
         if (!errors.length == 0) {
             for(const error of errors) {
@@ -100,9 +99,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
         errorsDisplay += '</ul>';
         errorDiv.innerHTML = errorsDisplay ;
-
     })
-
-    
-    
 });

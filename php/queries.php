@@ -1,53 +1,5 @@
 <?php
 
-// 4.task
-function ordersIndex(PDO $conn): ?array
-{
-    $sql="SELECT o.* FROM `order` o";
-    $stmt = $conn -> prepare($sql);
-    try{
-        $stmt->execute();
-        $data = $stmt -> fetchAll();
-        return ($stmt->rowCount() > 0) ? $data : null;
-    }catch(PDOException $e){
-        // Log error ($e->getMessage())
-        return null;
-    } 
-}
-
-function register(
-    PDO $conn,
-    string $name, 
-    string $surname,
-    string $email,  
-    string $phone, 
-    string $username, 
-    string $password, 
-    string $city, 
-    int $postalCode, 
-    string $address): ?bool
-{
-    $sql="INSERT INTO users (name, surname, email, phone, username, password, city, postalCode, address) 
-        VALUES (:name, :surname, :email, :phone, :username, :password, :city, :postalCode, :address)";
-    $stmt = $conn -> prepare($sql);
-    try{
-        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-        $stmt->bindParam(':surname', $surname, PDO::PARAM_STR);
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-        $stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
-        $stmt->bindParam(':username', $username, PDO::PARAM_STR);
-        $stmt->bindParam(':password', $password, PDO::PARAM_STR);
-        $stmt->bindParam(':city', $city, PDO::PARAM_STR);
-        $stmt->bindParam(':postalCode', $postalCode, PDO::PARAM_INT); 
-        $stmt->bindParam(':address', $address, PDO::PARAM_STR); 
-        $stmt->execute();
-    }catch(PDOException $e){
-        // Log error ($e->getMessage())
-        return null;
-    } 
-}
-
-
 // 5. task
 function oneA(PDO $conn): ?array
 {
