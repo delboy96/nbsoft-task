@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
             errors.push('Address must have between 4 and 200 characters.');
         }
 
+
+        const contentDiv = document.querySelector('body > div');
+        let contentDisplay = '<h2 class="border-bottom w-100 border-2 border-gray text-center px-4 py-3">js form val</h2><div class="d-flex flex-column justify-content-around w-100 text-center"><h3 class="text-success fst-italic mb-3">Uspesno poslati podaci!</h3>'; 
         const errorDiv = document.querySelector("#errors");
         let errorsDisplay = '<ul class="list-unstyled">'
 
@@ -70,8 +73,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 errorsDisplay += '<li>' + error + '</li>';
             }
         } else {
-            console.log('ok')
-            console.log(name.value, surname.value, gender, birthdate.value, address.value, city.value)
+            // console.log('ok')
+            // console.log(name.value, surname.value, gender, birthdate.value, address.value, city.value);
+
+            $.ajax({
+                url:'../php/fetch.php',
+                method:'POST',
+                data: {
+                    name: name.value,
+                    surname: surname.value,
+                    gender: gender,
+                    birthdate: birthdate.value,
+                    address: address.value,
+                    city: city.value
+                },
+                success: function(user) {
+                    form.style.display = "none !important";
+                    console.log(user);
+                    contentDisplay += '<span> Ime: ' + user.name + '</span></br><span> Prezime: ' + user.surname + '</span></br><span> Pol: ' + user.gender + '</span></br><span> Datum rodjenja: ' + user.birthdate + '</span></br><span> Adresa: ' + user.address + '</span></br><span> Grad: ' + user.city + '</span></br> </div>'
+                    contentDiv.innerHTML = contentDisplay;
+                }
+
+            })
+
         }
 
         errorsDisplay += '</ul>';
@@ -79,12 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
 
-    // $.ajax({
-    //     url:'',
-    //     method:'POST',
-    //     data:,
-    //     success:,
-
-    // })
+    
     
 });
