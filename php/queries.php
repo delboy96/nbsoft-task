@@ -17,7 +17,7 @@ function oneA(PDO $conn): ?array
 
 function oneB(PDO $conn): ?array
 {
-    $sql = "SELECT u.firstname, u.lastname, o.id, SUM(o.value) as ukupnaVrednost FROM user u INNER JOIN order o ON u.id = o.userId";
+    $sql = "SELECT u.firstname, u.lastname, o.id, SUM(o.value) as ukupnaVrednost FROM `user` u INNER JOIN `order` o ON u.id = o.userId";
     $stmt = $conn->prepare($sql);
     try{
         $stmt->execute();
