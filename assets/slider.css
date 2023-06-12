@@ -1,5 +1,6 @@
 body > div {
-    max-height: 75vh;
+    min-height: 80vh;
+    align-items: center;
 }
 
 .slider div {

@@ -71,10 +71,9 @@ function twoE(PDO $conn): ?array
     }
 }
 
-// not finished
 function twoF(PDO $conn): ?array
 {
-    $sql = "SELECT u.*, COUNT(oi.id) as brojStavkiPorudzbine FROM `user` u INNER JOIN `order` o ON u.id = o.userId INNER JOIN `orderitem` oi ON o.id = oi.orderId GROUP BY u.id HAVING brojStavkiPorudzbine > 2";
+    $sql = "SELECT u.*, o.id, COUNT(oi.id) as brojStavkiPorudzbine FROM `user` u INNER JOIN `order` o ON u.id = o.userId INNER JOIN `orderitem` oi ON o.id = oi.orderId GROUP BY o.id HAVING brojStavkiPorudzbine > 2";
     $stmt = $conn->prepare($sql);
     try{
         $stmt->execute();
